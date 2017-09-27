@@ -32,7 +32,9 @@ Array.prototype.reset = function(){
 /**
  * Ask whether the stack is empty
  */
-Array.prototype.isEmpty = function(){}
+Array.prototype.isEmpty = function(){
+    return this.length == 0;
+}
 
 
 /**
@@ -40,7 +42,11 @@ Array.prototype.isEmpty = function(){}
  * @param pArray, the array which contains the elements to be added
  * @example stackInstance.$stackOf([7,8,9,11]]) 
  */
-Array.prototype.$stackOf = function(pArray){}
+Array.prototype.$stackOf = function(pArray){
+    for(let item of pArray){
+        this.push(item);
+    }
+}
 
 
 /**
