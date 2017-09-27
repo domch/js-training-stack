@@ -18,7 +18,9 @@ Array.prototype.remove = function(){
 /**
  * Displays the first item/tos(top of stack) from the stack
  */
-Array.prototype.peek = function(){}
+Array.prototype.peek = function(){
+    return this[this.length-1];
+}
 
 /**
  * Delete all items from the stack
