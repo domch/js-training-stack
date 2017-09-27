@@ -25,7 +25,9 @@ Array.prototype.peek = function(){
 /**
  * Delete all items from the stack
  */
-Array.prototype.reset = function(){}
+Array.prototype.reset = function(){
+    this.length = 0;
+}
 
 /**
  * Ask whether the stack is empty
