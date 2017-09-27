@@ -4,12 +4,16 @@
  * Add a new item into the stack
  * @param  pItem, item to be added
  */
-Array.prototype.add = function(pItem){};
+Array.prototype.add = function(pItem){
+    this.push(pItem);
+};
 
 /**
  * Remove the first item/tos(top of the stack) from the stack
  */
-Array.prototype.remove = function(){}
+Array.prototype.remove = function(){
+    this.pop();
+}
 
 /**
  * Displays the first item/tos(top of stack) from the stack
